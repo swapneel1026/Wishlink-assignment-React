@@ -1,0 +1,44 @@
+.TaggedSectionContainer {
+  width: 36rem;
+  height: 41.8rem;
+  /* border: 1px solid blue; */
+  position: relative;
+  bottom: 1rem;
+  background-color: #fff;
+  border-radius: 1.3rem 1.3rem 0 0;
+}
+.TaggedSectionHeading {
+  width: 19rem;
+  height: 2.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  left: 1rem;
+  top: 1rem;
+}
+.TaggedProductsList {
+  position: relative;
+  top: 1rem;
+  padding: 1.2rem;
+  display: flex;
+  gap: 1.8rem;
+}
+.offertag {
+  position: absolute;
+  top: 2rem;
+  left: 0.8rem;
+  z-index: 100;
+}
+.whatsapp-container {
+  height: 4.8rem;
+  width: 4.8rem;
+  background-color: #33cc66;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 48rem;
+  left: 31rem;
+  z-index: 100;
+}

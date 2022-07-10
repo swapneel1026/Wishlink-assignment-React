@@ -1,0 +1,70 @@
+.productCard-container {
+  /* border: 1px solid green; */
+  width: 15.8rem;
+  height: 35.2rem;
+}
+.productCard1 {
+  height: 50%;
+  width: 100%;
+
+  background-image: url(../assets/product.svg);
+  background-repeat: no-repeat;
+}
+.productCard2 {
+  height: 50%;
+  width: 100%;
+  /* border: 1px solid chocolate; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.productBrand {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #333333;
+}
+.productTitle {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.productMrp {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #999999;
+  text-decoration: line-through;
+}
+.productOff {
+  margin-left: 0.4rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #dd572d;
+}
+.productdiscPrice {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #333333;
+}
+button {
+  margin-left: 1rem;
+  width: 13.4rem;
+  height: 3.2rem;
+  border-radius: 10rem;
+  background-color: #021927;
+  color: #fff;
+}

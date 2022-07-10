@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d7d1d1;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+.App {
+  margin-left: 1rem;
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 261.4rem;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-color: #fff;
+}
+
+/* media-queries */
+
+@media screen and (min-width: 250px) and (max-width: 320px) {
+  html {
+    font-size: 6.9px;
+  }
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .whatsapp-container {
+    margin-top: 14rem;
+    margin-left: -1.3rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  html {
+    font-size: 8.4px;
+  }
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .whatsapp-container {
+    margin-top: 14rem;
+    margin-left: -1.3rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  html {
+    font-size: 10.2px;
+  }
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .whatsapp-container {
+    margin-top: 14rem;
+    margin-left: -1.3rem;
+  }
+}

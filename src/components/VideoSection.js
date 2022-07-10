@@ -1,0 +1,59 @@
+import React, { useState, useRef } from "react";
+import "../css/VideoSection.css";
+import { FaPlay } from "react-icons/fa";
+import videoposter from "../assets/videothumbnail.png";
+import video from "../assets/Rashi300622.mp4";
+
+const VideoSection = () => {
+  const [play, setPlay] = useState(true);
+  const videoRef = useRef(null);
+  const iconRef = useRef();
+  const textRef = useRef();
+
+  const playPausebuttonHandler = () => {
+    if (play) {
+      videoRef.current.play();
+      iconRef.current.style.opacity = "0";
+      iconRef.current.style.transition = " none 0.2s ease";
+      textRef.current.style.opacity = "0";
+      textRef.current.style.transition = " none 0.2s ease";
+      setPlay(false);
+    }
+    if (!play) {
+      setPlay(true);
+      iconRef.current.style.opacity = "1";
+      iconRef.current.style.transition = "none 0.8s easeOut";
+      textRef.current.style.opacity = "1";
+      textRef.current.style.transition = "none 0.8s easeOut";
+
+      videoRef.current.pause();
+    }
+  };
+
+  return (
+    <div className="video-container" onClick={playPausebuttonHandler}>
+      <video
+        className="video"
+        poster={videoposter}
+        loop
+        // controls
+        width="100%"
+        height="100%"
+        ref={videoRef}
+      >
+        <source src={video} type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <div className="playButtonCircle" ref={iconRef}>
+        <FaPlay className="playIcon" onClick={playPausebuttonHandler} />
+      </div>
+      <div>
+        <div ref={textRef} className="video-text">
+          Shop My Closet
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default VideoSection;

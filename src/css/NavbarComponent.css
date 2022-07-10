@@ -1,0 +1,49 @@
+.navbar {
+  position: fixed;
+  width: 36rem;
+  /* border: 1px solid purple; */
+  height: 5.6rem;
+  display: flex;
+  align-items: center;
+  /* background-color: #fff; */
+}
+
+.profileimg {
+  height: 3.6rem;
+  width: 3.6rem;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 7rem;
+}
+.profileimg > img {
+  position: relative;
+  top: 0.4rem;
+  height: 6rem;
+}
+.arrow {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 2rem;
+}
+.profilename {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: 0.025rem;
+  color: #333333;
+  position: absolute;
+  left: 11.9rem;
+}
+.verified {
+  position: absolute;
+  left: 24rem;
+}
+.search {
+  position: absolute;
+  left: 32rem;
+}

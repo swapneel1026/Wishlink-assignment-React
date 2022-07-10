@@ -1,0 +1,40 @@
+.dropdown {
+  height: 85.1rem;
+  width: 36rem;
+  background-color: #fff;
+  position: relative;
+  top: -1rem;
+  /* border: 1px solid peru; */
+}
+.dropdownHeading {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+}
+.Accordion-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 96%;
+  column-gap: 1rem;
+}
+.dropdownacc {
+  position: absolute;
+  /* border: 1px solid red; */
+  width: 100%;
+
+  /* padding: 1rem; */
+}
+.accordion {
+  /* border: 1px solid green; */
+  width: 96%;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #e7f1ff;
+}
