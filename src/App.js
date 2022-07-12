@@ -1,5 +1,5 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import CompletMyLookSection from "./components/CompletMyLookSection";
 import NavbarComponent from "./components/NavbarComponent";
 import TaggedSection from "./components/TaggedSection";

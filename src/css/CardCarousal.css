@@ -1,13 +1,14 @@
 .card-cr {
   /* border: 1px solid green; */
   display: flex;
+
   gap: 1rem;
   z-index: 5000000000;
   position: absolute;
   top: 45rem;
   overflow-x: scroll;
-  width: 36rem;
-  padding-left: 1rem;
+  width: 34.7rem;
+  margin-left: 1rem;
 }
 .card-cr::-webkit-scrollbar {
   display: none;
