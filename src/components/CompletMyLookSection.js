@@ -5,10 +5,14 @@ import AccordionComp from "./Accordion";
 
 const CompletMyLookSection = () => {
   return (
-    <div className="dropdown">
-      <div className="dropdownHeading">Complete my look</div>
-      <AccordionComp />
-    </div>
+    <>
+      <div className="dropdown">
+        <div className="dropdownHeading">Complete my look</div>
+        <div>
+          <AccordionComp />
+        </div>
+      </div>
+    </>
   );
 };
 

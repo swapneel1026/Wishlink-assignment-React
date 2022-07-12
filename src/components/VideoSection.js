@@ -4,8 +4,6 @@ import { FaPlay } from "react-icons/fa";
 import videoposter from "../assets/videothumbnail.png";
 import video from "../assets/Rashi300622.mp4";
 import CardCarousal from "../components/CardCarousal";
-// import { TbBrandWhatsapp } from "react-icons/tb";
-// import "../css/TaggedSectionContainer.css";
 
 const VideoSection = () => {
   const [play, setPlay] = useState(true);
@@ -13,8 +11,6 @@ const VideoSection = () => {
   const iconRef = useRef();
   const textRef = useRef();
   const VideoContainerRef = useRef();
-  // const cardRef = useRef();
-  // const whtsapp = useRef();
 
   const playPausebuttonHandler = () => {
     if (play) {
@@ -68,9 +64,6 @@ const VideoSection = () => {
         </div>
         <CardCarousal />
       </div>
-      {/* <div className="whatsapp-container">
-        <TbBrandWhatsapp ref={whtsapp} size={"2.25rem"} color={"white"} />
-      </div> */}
     </div>
   );
 };

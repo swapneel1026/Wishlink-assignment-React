@@ -41,11 +41,11 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className="Accordion-content">
+          <div className="Accordion-content">
             <ProductCard />
             <ProductCard />
             <ProductCard />
-          </Typography>
+          </div>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -74,11 +74,11 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className="Accordion-content">
+          <div className="Accordion-content">
             <ProductCard />
             <ProductCard />
             <ProductCard />
-          </Typography>
+          </div>
         </AccordionDetails>
       </Accordion>
     </div>
