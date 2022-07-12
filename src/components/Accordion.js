@@ -1,36 +1,86 @@
-import React from "react";
-import { Accordion } from "react-bootstrap";
-import ProductCard from "./ProductCard";
+import * as React from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ProductCard from "../components/ProductCard";
 
-const AccordionComp = () => {
+export default function ControlledAccordions() {
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
   return (
-    <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>
-          <h4>DIOR Backstage Foundation</h4>
-        </Accordion.Header>
-        <Accordion.Body>
-          <div className="Accordion-content">
+    <div style={{ position: "relative", top: "0.7rem" }}>
+      <Accordion
+        expanded={expanded === "panel1"}
+        onChange={handleChange("panel1")}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "space-between",
+        }}
+      >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon sx={{ fontSize: "3rem" }} />}
+          aria-controls="panel1bh-content"
+          id="panel1bh-header"
+        >
+          <Typography
+            sx={{
+              width: "100%",
+              flexShrink: 0,
+              fontWeight: "600",
+              fontSize: "1.4rem",
+            }}
+          >
+            DIOR Backstage Foundation
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="Accordion-content">
             <ProductCard />
             <ProductCard />
             <ProductCard />
-          </div>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>
-          <h4>DIOR Backstage Foundation</h4>
-        </Accordion.Header>
-        <Accordion.Body>
-          <div className="Accordion-content">
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        expanded={expanded === "panel2"}
+        onChange={handleChange("panel2")}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "space-between",
+        }}
+      >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon sx={{ fontSize: "3rem" }} />}
+          aria-controls="panel2bh-content"
+          id="panel2bh-header"
+        >
+          <Typography
+            sx={{
+              width: "100%",
+              flexShrink: 0,
+              fontWeight: "600",
+              fontSize: "1.4rem",
+            }}
+          >
+            DIOR Backstage Foundation
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="Accordion-content">
             <ProductCard />
             <ProductCard />
             <ProductCard />
-          </div>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+    </div>
   );
-};
-
-export default AccordionComp;
+}

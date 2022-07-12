@@ -5,6 +5,7 @@
   height: 5.6rem;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   /* background-color: #fff; */
 }
 
@@ -17,7 +18,7 @@
   align-items: center;
   border-radius: 50%;
   position: absolute;
-  left: 7rem;
+  left: 6rem;
 }
 .profileimg > img {
   position: relative;
@@ -28,7 +29,7 @@
   width: 2rem;
   height: 2rem;
   position: absolute;
-  left: 2rem;
+  left: 1rem;
 }
 .profilename {
   font-size: 1.6rem;
@@ -37,11 +38,11 @@
   letter-spacing: 0.025rem;
   color: #333333;
   position: absolute;
-  left: 11.9rem;
+  left: 10.7rem;
 }
 .verified {
   position: absolute;
-  left: 24rem;
+  left: 22.7rem;
 }
 .search {
   position: absolute;

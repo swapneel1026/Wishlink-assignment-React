@@ -1,5 +1,5 @@
 .dropdown {
-  height: 85.1rem;
+  height: auto;
   width: 36rem;
   background-color: #fff;
   position: relative;
@@ -17,24 +17,4 @@
   grid-template-columns: auto auto;
   width: 96%;
   column-gap: 1rem;
-}
-.dropdownacc {
-  position: absolute;
-  /* border: 1px solid red; */
-  width: 100%;
-
-  /* padding: 1rem; */
-}
-.accordion {
-  /* border: 1px solid green; */
-  width: 96%;
-}
-.accordion-button:focus {
-  z-index: 3;
-  border-color: none;
-  outline: 0;
-}
-.accordion-button:not(.collapsed) {
-  color: black;
-  background-color: #e7f1ff;
 }

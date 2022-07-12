@@ -1,0 +1,82 @@
+.cardContainer {
+  position: relative;
+  width: 29.5rem;
+  height: 9.8rem;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.8rem;
+  background-color: #fff;
+  border-radius: 0.8rem;
+}
+.avatar {
+  /* border: 1px solid blue; */
+  height: 4.8rem;
+  width: 4.8rem;
+  background-image: url("../assets/avatar.svg");
+}
+.cardDetailsAndButton {
+  /* border: 1px solid purple; */
+  width: 22.3rem;
+  height: 6.4rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.CardDetails {
+  /* border: 1px solid green; */
+  width: 15.4rem;
+  height: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+}
+.CardPrices {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.cardButton {
+  /* border: 1px solid greenyellow; */
+  width: 6.1rem;
+  height: 2.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.cardButton > button {
+  /* border: 1px solid greenyellow; */
+  width: 100%;
+  height: 100%;
+}
+.price {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+  color: #333333;
+}
+.priceDrop {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #999999;
+  text-decoration: line-through;
+}
+.priceOff {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #dd5f2d;
+}
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+}
+.description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}

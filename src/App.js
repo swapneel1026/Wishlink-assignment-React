@@ -5,6 +5,8 @@ import NavbarComponent from "./components/NavbarComponent";
 import TaggedSection from "./components/TaggedSection";
 import VideoSection from "./components/VideoSection";
 import FavouritesSection from "./components/FavouritesSection";
+import { TbBrandWhatsapp } from "react-icons/tb";
+import "./css/TaggedSectionContainer.css";
 
 function App() {
   return (
@@ -14,6 +16,9 @@ function App() {
       <TaggedSection />
       <CompletMyLookSection />
       <FavouritesSection />
+      <div className="whatsapp-container">
+        <TbBrandWhatsapp size={"2.25rem"} color={"white"} />
+      </div>
     </div>
   );
 }

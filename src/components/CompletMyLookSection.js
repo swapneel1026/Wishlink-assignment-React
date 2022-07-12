@@ -7,9 +7,7 @@ const CompletMyLookSection = () => {
   return (
     <div className="dropdown">
       <div className="dropdownHeading">Complete my look</div>
-      <div className="dropdownacc">
-        <AccordionComp className="accordion" />
-      </div>
+      <AccordionComp />
     </div>
   );
 };

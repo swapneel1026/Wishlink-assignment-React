@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 .App {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   /* border: 1px solid red; */
   width: 100vw;
   height: 261.4rem;
@@ -19,6 +19,9 @@ html {
   top: 0%;
   bottom: 0%;
   background-color: #fff;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* media-queries */
@@ -63,5 +66,8 @@ html {
   .whatsapp-container {
     margin-top: 14rem;
     margin-left: -1.3rem;
+  }
+  .card-cr {
+    margin-top: 10rem;
   }
 }

@@ -5,7 +5,7 @@
   position: sticky;
   z-index: 0;
   top: 5.6rem;
-  background-image: url(../assets/PriyankaArya-3003-1\ 1.svg);
+  background-color: #e29c69;
   background-position: left;
   background-size: cover;
   background-image: #fff;
@@ -46,6 +46,6 @@
 }
 .video {
   object-position: center;
-  /* object-fit: cover; */
+  object-fit: contain;
   z-index: -1;
 }
