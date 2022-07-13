@@ -8,7 +8,8 @@
   top: 39rem;
   overflow-x: scroll;
   width: 34.7rem;
-  margin-left: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .card-cr::-webkit-scrollbar {
   display: none;
