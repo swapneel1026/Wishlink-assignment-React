@@ -39,8 +39,15 @@ body::-webkit-scrollbar {
     margin-top: 14rem;
     margin-left: -1.3rem;
   }
+  .playButtonCircle {
+    margin-left: 3rem;
+    /* border: 1px solid red; */
+  }
+  .playIcon {
+    margin-left: 3.1rem;
+  }
 }
-@media screen and (min-width: 320px) and (max-width: 375px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
   html {
     font-size: 8.4px;
   }
@@ -53,8 +60,15 @@ body::-webkit-scrollbar {
     margin-top: 14rem;
     margin-left: -1.3rem;
   }
+  .playButtonCircle {
+    margin-left: 3rem;
+    /* border: 1px solid green; */
+  }
+  .playIcon {
+    margin-left: 3rem;
+  }
 }
-@media screen and (min-width: 375px) and (max-width: 425px) {
+@media screen and (min-width: 376px) and (max-width: 425px) {
   html {
     font-size: 10.2px;
   }
